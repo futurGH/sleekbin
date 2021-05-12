@@ -2,11 +2,9 @@ import { VercelRequest, VercelResponse } from "@vercel/node";
 
 import * as firebaseAdmin from "firebase-admin";
 
-const credential = firebaseAdmin.credential.cert({
-  projectId: process.env.FIREBASE_PROJECT_ID,
-  privateKey: process.env.FIREBASE_PRIVATE_KEY,
-  clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
-});
+const credential = firebaseAdmin.credential.cert(
+  require("../../service-account.json")
+);
 
 firebaseAdmin.initializeApp({
   credential,

@@ -1,14 +1,15 @@
+import { join } from "path";
 import { VercelRequest, VercelResponse } from "@vercel/node";
 
 import { nanoid } from "nanoid";
 
 import * as firebaseAdmin from "firebase-admin";
 
-const credential = firebaseAdmin.credential.cert({
-  projectId: process.env.FIREBASE_PROJECT_ID,
-  privateKey: process.env.FIREBASE_PRIVATE_KEY,
-  clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
-});
+const credential = firebaseAdmin.credential.cert(
+  require(join(__dirname, "service-account.json"))
+);
+console.log(__dirname);
+console.log(require("fs").readdirSync(__dirname));
 
 firebaseAdmin.initializeApp({
   credential,
