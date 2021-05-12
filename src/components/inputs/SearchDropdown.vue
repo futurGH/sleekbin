@@ -97,3 +97,29 @@ export default {
   },
 };
 </script>
+
+<style>
+/* Element UI input styling */
+input.el-input__inner {
+  @apply h-8 w-48 text-sm font-medium text-white bg-gray-700 border-none rounded-lg;
+}
+.el-popper__arrow {
+  @apply hidden;
+}
+.el-select__popper.el-popper[role="tooltip"] {
+  @apply bg-gray-800 text-sm leading-5 font-normal text-white border-none rounded-lg;
+}
+.el-select-dropdown__item {
+  @apply text-gray-300;
+}
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover {
+  @apply bg-gray-700 text-white;
+}
+.el-select-dropdown__item.selected {
+  @apply text-blue-400 font-semibold;
+}
+.el-select-dropdown__empty {
+  @apply text-gray-400;
+}
+</style>
