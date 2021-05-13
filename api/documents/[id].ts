@@ -3,7 +3,7 @@ import { VercelRequest, VercelResponse } from "@vercel/node";
 import * as firebaseAdmin from "firebase-admin";
 
 const credential = firebaseAdmin.credential.cert(
-  require("../../service-account.json")
+  JSON.parse(process.env.FIREBASE_CREDENTIALS)
 );
 
 firebaseAdmin.initializeApp({

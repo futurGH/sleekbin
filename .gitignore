@@ -24,4 +24,4 @@ pnpm-debug.log*
 
 # Project-specific exclusions
 .vercel
-service-account.json
+api/service-account.json

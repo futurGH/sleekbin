@@ -1,7 +1,0 @@
-{
-  "functions": {
-    "api/**/*.ts": {
-      "includeFiles": "service-account.json"
-    },
-  }
-}
