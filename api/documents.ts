@@ -1,6 +1,10 @@
 import { VercelRequest, VercelResponse } from "@vercel/node";
 
-import { nanoid } from "nanoid";
+import { customAlphabet } from "nanoid";
+const nanoid = customAlphabet(
+  "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+  8
+);
 
 import * as firebaseAdmin from "firebase-admin";
 
@@ -46,7 +50,7 @@ async function post(req: VercelRequest, res: VercelResponse) {
   const { content: document, ...documentData } = req.body;
   documentData.content = { title: document.title };
 
-  const slug = nanoid(6);
+  const slug = nanoid(8);
   documentData.id = slug;
 
   try {
