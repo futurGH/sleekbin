@@ -1,10 +1,10 @@
 <template>
-  <main class="flex items-center flex-grow -mt-32">
+  <main class="flex items-center flex-1 flex-grow -mt-32">
     <div
       class="flex flex-col w-full h-full max-w-8xl mx-auto pb-6 px-6 sm:px-10 lg:px-16"
     >
       <EditorSettings />
-      <div class="bg-gray-700 rounded-bl-xl rounded-br-xl shadow h-full">
+      <div class="bg-gray-700 rounded-b-xl shadow h-full">
         <AceEditor :readonly="readonly" />
       </div>
     </div>

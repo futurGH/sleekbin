@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-row items-center justify-center bg-gray-800 rounded-tl-xl rounded-tr-xl px-8 py-2 h-auto gap-x-8 xl:gap-x-12"
+    class="flex flex-row items-center justify-center space-x-8 bg-gray-800 rounded-tl-xl rounded-tr-xl px-8 py-2 h-auto gap-x-8 xl:gap-x-12"
   >
     <SearchDropdown
       :value="documentStore.language"
@@ -29,7 +29,7 @@
       </template>
       <PopoverPanel
         static
-        class="flex flex-col flex-grow gap-y-4 px-4 py-4 origin-top absolute z-10 w-96 2bt:w-80 mt-2 rounded-md shadow-lg bg-gray-600"
+        class="flex flex-col flex-grow space-y-4 gap-y-4 px-4 py-4 origin-top absolute z-10 w-96 mt-2 rounded-md shadow-lg bg-gray-600"
       >
         <SearchDropdown
           :value="documentStore.language"

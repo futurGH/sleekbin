@@ -8,7 +8,7 @@
             v-model="title"
             type="text"
             maxlength="28"
-            class="text-3xl max-w-full font-bold bg-transparent rounded-lg border-none hover:bg-gray-800 focus:bg-gray-700"
+            class="text-3xl tracking-tighter max-w-full font-bold bg-transparent rounded-lg border-none hover:bg-gray-800 focus:bg-gray-700"
             :class="
               title === 'Untitled' ? ['text-gray-300', 'italic'] : 'text-white'
             "

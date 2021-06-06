@@ -50,7 +50,7 @@ async function post(req: VercelRequest, res: VercelResponse) {
   const { content: document, ...documentData } = req.body;
   documentData.content = { title: document.title };
 
-  const slug = nanoid(8);
+  const slug = nanoid();
   documentData.id = slug;
 
   try {
