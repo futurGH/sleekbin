@@ -29,7 +29,7 @@
       </template>
       <PopoverPanel
         static
-        class="flex flex-col flex-grow space-y-4 gap-y-4 px-4 py-4 origin-top absolute z-10 w-96 mt-2 rounded-md shadow-lg bg-gray-600"
+        class="flex flex-col flex-grow left-0 2bt:left-auto space-y-2 gap-y-2 2bt:space-y-4 2bt:gap-y-4 px-4 py-4 origin-top fixed 2bt:absolute z-10 w-screen 2bt:w-96 mt-2 rounded-md shadow-lg bg-gray-600"
       >
         <SearchDropdown
           :value="documentStore.language"

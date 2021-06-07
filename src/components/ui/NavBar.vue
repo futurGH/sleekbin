@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-8xl mx-auto sm:px-10 lg:px-16">
     <div
-      class="flex flex-col gap-4 sm:gap-0 sm:flex-row items-center justify-center xs:justify-between h-auto sm:h-16 px-4 sm:px-0 py-4"
+      class="flex flex-col space-y-4 sm:space-y-0 sm:flex-row items-center justify-center xs:justify-between h-auto sm:h-16 px-4 sm:px-0 py-4"
     >
       <div class="hidden xs:flex items-center">
         <a href="/">
