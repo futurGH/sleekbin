@@ -1,7 +1,7 @@
 <template>
   <main class="flex items-center flex-grow -mt-32">
     <div
-      class="flex flex-col bg-gray-700 shadow w-full h-full rounded-xl max-w-8xl mx-auto pb-6 px-6 sm:px-10 lg:px-16"
+      class="flex flex-col bg-gray-900 shadow w-full h-full rounded-xl max-w-8xl mx-auto pb-6 px-6 sm:px-10 lg:px-16"
     >
       <div id="editor" class="w-full h-full rounded-xl"></div>
     </div>
