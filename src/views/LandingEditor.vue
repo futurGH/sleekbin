@@ -12,6 +12,7 @@
             :class="
               title === 'Untitled' ? ['text-gray-300', 'italic'] : 'text-white'
             "
+            aria-label="Title"
           />
         </div>
         <div class="flex flex-row">

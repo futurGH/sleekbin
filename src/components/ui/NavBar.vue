@@ -4,7 +4,7 @@
       class="flex flex-col space-y-4 sm:space-y-0 sm:flex-row items-center justify-center xs:justify-between h-auto sm:h-16 px-4 sm:px-0 py-4"
     >
       <div class="hidden xs:flex items-center">
-        <a href="/">
+        <a href="/" aria-label="Sleekbin">
           <Logo class="w-32" />
         </a>
       </div>
