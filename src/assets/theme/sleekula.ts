@@ -1,6 +1,6 @@
-import ace from "ace-builds";
+import ace from "ace-builds/src-min-noconflict/ace";
 
-ace["define"](
+ace.define(
   "ace/theme/sleekula",
   ["require", "exports", "module", "ace/lib/dom"],
   (require, exports) => {

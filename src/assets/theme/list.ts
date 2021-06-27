@@ -1,4 +1,4 @@
-import { themes } from "ace-builds/src-noconflict/ext-themelist";
+import { themes } from "ace-builds/src-min-noconflict/ext-themelist";
 
 const custom = [["Sleekula", "sleekula", "dark"]];
 

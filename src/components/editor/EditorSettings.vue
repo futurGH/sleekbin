@@ -84,7 +84,7 @@ import { mapStores } from "pinia";
 
 import { useDocument } from "@/stores/document";
 
-import { modes } from "ace-builds/src-noconflict/ext-modelist";
+import { modes } from "ace-builds/src-min-noconflict/ext-modelist";
 import themes from "@/assets/theme/list";
 
 import { PopoverPanel } from "@headlessui/vue";

@@ -12,8 +12,8 @@
 import { PropType } from "vue";
 import WebFont from "webfontloader";
 
-import ace from "ace-builds";
-import { modes } from "ace-builds/src-noconflict/ext-modelist";
+import ace from "ace-builds/src-min-noconflict/ace";
+import { modes } from "ace-builds/src-min-noconflict/ext-modelist";
 import themes from "@/assets/theme/list";
 import "ace-builds/webpack-resolver";
 import "@/assets/theme/sleekula";
