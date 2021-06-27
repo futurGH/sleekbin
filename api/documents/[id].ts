@@ -44,7 +44,7 @@ async function get(req: VercelRequest, res: VercelResponse) {
 }
 
 export default async function (req: VercelRequest, res: VercelResponse) {
-  res.setHeader("Cache-Control", `max-age=${60*60*24*365}, immutable`);
+  res.setHeader("Cache-Control", `max-age=${60 * 60 * 24 * 365}, immutable`);
   switch (req.method) {
     case "GET":
       await get(req, res);
