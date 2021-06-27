@@ -3,7 +3,7 @@
     <SwitchLabel as="span" class="mr-4 leading-4">
       <span class="text-sm font-medium text-gray-300">{{ this.name }}</span>
     </SwitchLabel>
-    <ElSelect
+    <el-select
       v-model="localValue"
       filterable
       remote
@@ -13,27 +13,23 @@
       @focus="filterOptions('')"
       @change="emitValueChange"
     >
-      <ElOption
+      <el-option
         v-for="element in filteredOptions"
         :key="element.value"
         :label="element.label"
         :value="element.value"
       />
-    </ElSelect>
+    </el-select>
   </SwitchGroup>
 </template>
 
 <script lang="ts">
 import { PropType } from "vue";
 
-import { ElSelect, ElOption } from "element-plus";
-import "element-plus/lib/theme-chalk/el-select.css";
-import "element-plus/lib/theme-chalk/el-option.css";
-
 import { SwitchGroup, SwitchLabel } from "@headlessui/vue";
 
 export default {
-  components: { ElSelect, ElOption, SwitchGroup, SwitchLabel },
+  components: { SwitchGroup, SwitchLabel },
   data() {
     return {
       options: new Array<{
