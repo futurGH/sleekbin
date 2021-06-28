@@ -9,11 +9,6 @@
         @apply scrollbar scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-600 scrollbar-thumb-rounded-full scrollbar-track-rounded-full;
     }
 
-    .ace_gutter, .ace_content, .ace_line {
-        /* hate doing this */
-        @apply pt-2 !important;
-    }
-
     .ace_mobile-button, .ace_mobile-menu {
         @apply hidden;
     }
