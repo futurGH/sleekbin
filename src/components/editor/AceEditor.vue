@@ -31,6 +31,7 @@ export default {
     this.aceEditor.getSession().on("change", () => {
       this.documentContent.body = this.aceEditor.getValue();
     });
+    this.loadFont(this.font);
   },
   props: {
     readonly: {
@@ -64,6 +65,18 @@ export default {
       return this.documentDataStore.$state.first_line_number;
     },
   },
+  methods: {
+    loadFont(font: string) {
+      WebFont.load({
+        google: {
+          families: [font],
+        },
+        fontactive: () => {
+          this.aceEditor.container.style.fontFamily = font;
+        },
+      });
+    },
+  },
   watch: {
     language(newValue: string) {
       this.aceEditor.session.setMode(
@@ -74,14 +87,7 @@ export default {
       this.aceEditor.setTheme(themes.find((t) => t.caption === newValue).theme);
     },
     font(newValue: string) {
-      WebFont.load({
-        google: {
-          families: [newValue],
-        },
-        fontactive: () => {
-          this.aceEditor.container.style.fontFamily = newValue;
-        },
-      });
+      this.loadFont(newValue);
     },
     fontSize(newValue: number) {
       this.aceEditor.setFontSize(newValue);
