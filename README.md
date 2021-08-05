@@ -11,6 +11,7 @@ npm install
 - Get a [Google Fonts API key](https://developers.google.com/fonts/docs/developer_api#details), set environment variable `VUE_APP_GOOGLE_FONTS_API_KEY` to it
 - Create a Firebase project with Cloud Storage and Firestore, set environment variable `FIREBASE_STORAGE_BUCKET` to the storage bucket ID
 - Create a service account for the Firebase project, set environment variable `FIREBASE_CREDENTIALS` to the entire service account key object
+  - (I'm sorry about this, it was the easiest way for me to parse it into a JSON object without Firebase complaining)
 
 **DEPLOY TO VERCEL!**
 *Also swap out the instances of "Sleekbin" in the code if you want to. Not too difficult, it's in like 3 places.*
